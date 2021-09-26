@@ -34,19 +34,27 @@ const Trending = () => {
 
   return (
     <div className="trending">
-      <h3 className="trending__title">Browser Our Trending</h3>
+      <h3 className="trending__title">
+        Browser Our Trending <br />
+        <span className="trending__title-green">Receipt</span>
+      </h3>
       <div className="trending__container">
         {receipt.map((item) => {
           const { img, name, category, stars } = item;
           return (
             <div className="trending__item">
               <img src={img} alt={name} className="trending__item-img" />
-              <p className="trending__item-name">{name}</p>
-              <p className="trending__item-category">{category}</p>
-              <Stars stars={stars} />
+              <div className="trending__item-detail">
+                <p className="trending__item-name">{name}</p>
+                <p className="trending__item-category">{category}</p>
+                <Stars stars={stars} />
+              </div>
             </div>
           );
         })}
+      </div>
+      <div className="trending__btn btn">
+        <a href="##">All Receipt</a>
       </div>
     </div>
   );

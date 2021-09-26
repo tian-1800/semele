@@ -1,5 +1,5 @@
 .category {
-  padding: 4.01375rem 8.3125rem 3.125rem 7.3125rem;
+  padding: 4.01375rem 7.5rem 3.125rem 7.3125rem;
 
   &__title {
     font-size: 2.375rem;
@@ -24,9 +24,9 @@
   &__item {
     text-align: center;
     color: $text-dark;
-    width: 14.375rem;
+    flex: 1;
     height: 10.9375rem;
-    padding: 1.875rem 5.0625rem;
+    padding: 1.875rem 0;
     border-radius: 0.5rem;
     background-color: $darker-blue;
 
