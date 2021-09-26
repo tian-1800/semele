@@ -25,6 +25,14 @@ a {
   border-radius: 1.3125rem;
   padding: 0.625rem 1.125rem;
 }
+.btn__chevron {
+  font-size: 1.134375rem;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #8bac3e;
+}
 
 .stars {
   color: #ff8412;
@@ -68,7 +76,7 @@ a {
   justify-content: space-between;
 }
 .hero__left {
-  width: 30.125rem;
+  max-width: 30.125rem;
   padding-top: 4.96875rem;
   display: flex;
   flex-direction: column;
@@ -125,4 +133,65 @@ a {
   line-height: 0.875rem;
   height: 0.9375rem;
   margin-bottom: 0.576875rem;
+}
+
+.category {
+  padding: 4.01375rem 8.3125rem 3.125rem 7.3125rem;
+}
+.category__title {
+  font-size: 2.375rem;
+  font-weight: 500;
+  line-height: 3.125rem;
+  color: #333333;
+}
+.category__title-green {
+  color: #8bac3e;
+}
+.category__container {
+  display: flex;
+  gap: 0.625rem;
+  height: 13.4375rem;
+  align-items: center;
+  padding: 0.625rem 0;
+  margin-bottom: 2.8125rem;
+}
+.category__item {
+  text-align: center;
+  color: #333333;
+  width: 14.375rem;
+  height: 10.9375rem;
+  padding: 1.875rem 5.0625rem;
+  border-radius: 0.5rem;
+  background-color: #405eb6;
+}
+.category__item-icon {
+  height: 3rem;
+}
+.category__item-name {
+  line-height: 1.375rem;
+  font-weight: 500;
+  margin: 1.5rem 0 0.25rem;
+}
+.category__item-items {
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+.category__btn-container {
+  display: flex;
+  gap: 0.8125rem;
+  width: 100%;
+  justify-content: flex-end;
+}
+.category__next-btn {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  border-radius: 1.5625rem;
+  padding: 0.5625rem 0.8125rem;
+  border: none;
+  display: flex;
+}
+.category__btn-text {
+  margin-left: 0.4375rem;
+  margin-right: 0.75rem;
 }/*# sourceMappingURL=App.css.map */

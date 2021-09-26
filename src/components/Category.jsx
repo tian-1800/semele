@@ -1,4 +1,5 @@
 import React from "react";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import cupcake from "../icons/cupcake.svg";
 import doughnut from "../icons/doughnut.svg";
 import kebab from "../icons/kebab.svg";
@@ -16,7 +17,10 @@ const Category = () => {
 
   return (
     <div className="category">
-      <h3 className="category__title">Browser Our Category</h3>
+      <h3 className="category__title">
+        Browser Our Category <br />
+        <span className="category__title-green">Receipt</span>
+      </h3>
       <div className="category__container">
         {categories.map((category) => {
           const { name, img, items } = category;
@@ -28,6 +32,16 @@ const Category = () => {
             </div>
           );
         })}
+      </div>
+      <div className="category__btn-container">
+        <button type="button" className="category__next-btn btn">
+          <MdChevronLeft className="btn__chevron" />
+          <span className="category__btn-text">PREV</span>
+        </button>
+        <button type="button" className="category__next-btn btn">
+          <span className="category__btn-text">NEXT</span>
+          <MdChevronRight className="btn__chevron" />
+        </button>
       </div>
     </div>
   );
