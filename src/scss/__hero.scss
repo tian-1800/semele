@@ -1,33 +1,30 @@
 .hero {
-  padding: 0 9.375rem 0 7.5rem;
-  margin-top: 0.4375rem;
+  margin: 7.09375rem 9.375rem 0 7.5rem;
   display: flex;
-  //   gap: 10.125rem;
-  justify-content: space-between;
-
-  &__left {
-    max-width: 30.125rem;
-    padding-top: 4.96875rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  margin-bottom: 12.170625rem;
 
   &__title {
+    max-width: 30.125rem;
     font-size: 4rem;
     color: $primary-green;
     font-weight: 500;
   }
 
   &__text {
+    max-width: 30.125rem;
     color: $text-light;
     font-size: 1.125rem;
     line-height: 1.8125rem;
     font-weight: 400;
   }
 
-  &__right {
-    position: relative;
+  &__teaser {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   &__teaser-large {
@@ -39,6 +36,11 @@
     position: absolute;
     left: -7.5625rem;
     top: 21.889375rem;
+  }
+
+  &__container-btn {
+    display: flex;
+    gap: 1rem;
   }
 }
 

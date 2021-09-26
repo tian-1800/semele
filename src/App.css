@@ -23,7 +23,7 @@ footer {
   margin: 5.5rem 0 2rem 0;
 }
 
-.btn, .btn__masuk {
+.btn, .btn__about, .btn__masuk {
   background-color: #8bac3e;
   color: #fff;
   display: flex;
@@ -33,6 +33,12 @@ footer {
 .btn__masuk {
   justify-content: center;
   height: 2.625rem;
+  border-radius: 1.3125rem;
+  padding: 0.625rem 1.125rem;
+}
+.btn__about {
+  color: #333333;
+  background-color: #f2f2f2;
   border-radius: 1.3125rem;
   padding: 0.625rem 1.125rem;
 }
@@ -81,31 +87,30 @@ footer {
 }
 
 .hero {
-  padding: 0 9.375rem 0 7.5rem;
-  margin-top: 0.4375rem;
-  display: flex;
-  justify-content: space-between;
-}
-.hero__left {
-  max-width: 30.125rem;
-  padding-top: 4.96875rem;
+  margin: 7.09375rem 9.375rem 0 7.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  position: relative;
+  margin-bottom: 12.170625rem;
 }
 .hero__title {
+  max-width: 30.125rem;
   font-size: 4rem;
   color: #8bac3e;
   font-weight: 500;
 }
 .hero__text {
+  max-width: 30.125rem;
   color: #757575;
   font-size: 1.125rem;
   line-height: 1.8125rem;
   font-weight: 400;
 }
-.hero__right {
-  position: relative;
+.hero__teaser {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .hero__teaser-large {
   width: 25.80625rem;
@@ -115,6 +120,10 @@ footer {
   position: absolute;
   left: -7.5625rem;
   top: 21.889375rem;
+}
+.hero__container-btn {
+  display: flex;
+  gap: 1rem;
 }
 
 .inset {

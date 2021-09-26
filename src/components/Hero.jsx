@@ -14,15 +14,8 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <div className="hero__left">
-        <h3 className="hero__title">Good Food Us Good Mood</h3>
-        <p className="hero__text">
-          I should think that conserving our natural resources should be a
-          conservative position: Not to waste food, and not to throw away a lot
-          of the food that we buy.
-        </p>
-      </div>
-      <div className="hero__right">
+      <h3 className="hero__title">Good Food Us Good Mood</h3>
+      <div className="hero__teaser">
         <img src={img} alt={name} className="hero__teaser-large" />
         <div className="hero__inset inset">
           <img src={img} alt={name} className="inset__img" />
@@ -32,6 +25,15 @@ const Hero = () => {
             <Stars stars={stars} />
           </div>
         </div>
+      </div>
+      <p className="hero__text">
+        I should think that conserving our natural resources should be a
+        conservative position: Not to waste food, and not to throw away a lot of
+        the food that we buy.
+      </p>
+      <div className="hero__container-btn">
+        <div className="hero__btn btn__masuk">Daftar Sekarang</div>
+        <div className="hero__btn btn__about">About Us</div>
       </div>
     </div>
   );
