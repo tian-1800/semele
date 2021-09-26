@@ -1,0 +1,121 @@
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8.9375rem 0 8.9375rem;
+
+  &__company {
+    margin-top: 4.64375rem;
+    width: 20.9375rem;
+  }
+
+  &__logo {
+    width: 12.9375rem;
+    height: 3.125rem;
+    margin-bottom: 1.35625rem;
+  }
+
+  &__address {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: $text-light;
+    margin-bottom: 2.0625rem;
+  }
+
+  &__btn-container {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__btn-item {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: $primary-green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: $primary-green;
+      color: #fff;
+    }
+  }
+
+  &__section {
+    margin-top: 4.9375rem;
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: $text-dark;
+    margin-bottom: 2.0625rem;
+  }
+
+  &__subitem {
+    font-size: 0.875rem;
+    color: $text-light;
+    line-height: 1rem;
+    margin-bottom: 1.1875rem;
+  }
+
+  &__discount {
+    font-size: 0.875rem;
+    color: $text-light;
+    line-height: 1.5rem;
+    width: 15.3125rem;
+  }
+
+  &__form {
+    font-size: 0.875rem;
+    width: 11.875rem;
+    border: solid 1px #000;
+    color: #000;
+    border-radius: 0.5rem 0 0 0.5rem;
+    height: 2.5rem;
+    padding-left: 0.9375rem;
+    display: flex;
+    position: relative;
+
+    &-input {
+      line-height: 1.5rem;
+      width: 8rem;
+    }
+
+    &-btn {
+      position: absolute;
+      height: inherit;
+      top: -1px;
+      right: -60px;
+      border: none;
+      font-weight: 500;
+      line-height: 1.5rem;
+      width: 3.75rem;
+      padding: 0.5rem 0.5rem 0.5625rem 0.6875rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+  }
+
+  &__newsletter {
+    color: #000;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.15625rem;
+
+    &-email {
+      @extend .bottom-nav__newsletter;
+      margin: 1.1875rem 0 0.625rem 0;
+    }
+
+    &-phone {
+      @extend .bottom-nav__newsletter;
+    }
+
+    &-icon {
+      color: $primary-green;
+    }
+  }
+}

@@ -11,9 +11,15 @@ const BottomNav = () => (
         Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950
       </p>
       <div className="bottom-nav__btn-container">
-        <FiMail />
-        <FiPhone />
-        <FiInstagram />
+        <div className="bottom-nav__btn-item">
+          <FiMail />
+        </div>
+        <div className="bottom-nav__btn-item">
+          <FiPhone />
+        </div>
+        <div className="bottom-nav__btn-item">
+          <FiInstagram />
+        </div>
       </div>
     </div>
     <div className="bottom-nav__section">
@@ -49,7 +55,7 @@ const BottomNav = () => (
     <div className="bottom-nav__section">
       <p className="bottom-nav__subtitle">Newsletter</p>
       <p className="bottom-nav__discount">
-        Get now free 50% for all products on your first order
+        Get now free 50% discount for all products on your first order
       </p>
       <form action="" className="bottom-nav__form">
         <input
@@ -57,16 +63,16 @@ const BottomNav = () => (
           className="bottom-nav__form-input"
           placeholder="Your email address"
         />
-        <button type="button" className="bottom-nav__form-btn">
+        <button type="submit" className="bottom-nav__form-btn btn">
           SEND
         </button>
       </form>
       <div className="bottom-nav__newsletter-email">
-        <FiMail />
+        <FiMail className="bottom-nav__newsletter-icon" />
         elemesid@gmail.com
       </div>
       <div className="bottom-nav__newsletter-phone">
-        <FiPhone />
+        <FiPhone className="bottom-nav__newsletter-icon" />
         0888 1111 2222
       </div>
     </div>

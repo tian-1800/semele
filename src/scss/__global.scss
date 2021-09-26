@@ -6,11 +6,22 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  background-color: #e95;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+footer {
+  color: $text-light;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5.5rem 0 2rem 0;
 }
 
 .btn {
