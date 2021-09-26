@@ -6,7 +6,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
-  background-color: #e95;
+  // background-color: #e95;
 }
 
 a {
@@ -29,6 +29,7 @@ footer {
   color: $text-button;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   &__masuk {
     @extend .btn;

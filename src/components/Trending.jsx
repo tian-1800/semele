@@ -12,24 +12,24 @@ import salmonRoll from "../img/salmon-roll.png";
 
 const Trending = () => {
   const receipt = [
-    { img: pizzaPaperoni, name: "Pizza Paperoni", category: "Pizza", stars: 4 },
-    { img: pizzaMeat, name: "Pizza Meat", category: "Pizza", stars: 3 },
-    { img: donerKebab, name: "Doner Kebab", category: "Kebab", stars: 5 },
-    { img: salmonRoll, name: "Salmon Roll", category: "Salmon", stars: 4 },
-    { img: cupcakeChoco, name: "Cupcake Choco", category: "Cupcake", stars: 4 },
+    { img: pizzaPaperoni, name: "Pizza Paperoni", category: "pizza", stars: 4 },
+    { img: pizzaMeat, name: "Pizza Meat", category: "pizza", stars: 3 },
+    { img: donerKebab, name: "Doner Kebab", category: "kebab", stars: 5 },
+    { img: salmonRoll, name: "Salmon Roll", category: "salmon", stars: 4 },
+    { img: cupcakeChoco, name: "Cupcake Choco", category: "cupcake", stars: 4 },
     {
       img: doughnutMilk,
       name: "Doughnut Milk",
-      category: "Doughnut",
+      category: "doughnut",
       stars: 5,
     },
     {
       img: doughnutUnicorn,
       name: "Doughnut Unicorn",
-      category: "Doughnut",
+      category: "doughnut",
       stars: 4,
     },
-    { img: kathiKebab, name: "Kathi Kebab", category: "Kebab", stars: 4 },
+    { img: kathiKebab, name: "Kathi Kebab", category: "kebab", stars: 4 },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Trending = () => {
         {receipt.map((item) => {
           const { img, name, category, stars } = item;
           return (
-            <div className="trending__item">
+            <div className={`trending__item ${category}`}>
               <img src={img} alt={name} className="trending__item-img" />
               <div className="trending__item-detail">
                 <p className="trending__item-name">{name}</p>

@@ -8,11 +8,11 @@ import salmon from "../icons/salmon.svg";
 
 const Category = () => {
   const categories = [
-    { name: "Cupcake", img: cupcake, items: 22 },
-    { name: "Pizza", img: pizza, items: 25 },
-    { name: "Kebab", img: kebab, items: 12 },
-    { name: "Salmon", img: salmon, items: 22 },
-    { name: "Doughnut", img: doughnut, items: 11 },
+    { name: "cupcake", img: cupcake, items: 22 },
+    { name: "pizza", img: pizza, items: 25 },
+    { name: "kebab", img: kebab, items: 12 },
+    { name: "salmon", img: salmon, items: 22 },
+    { name: "doughnut", img: doughnut, items: 11 },
   ];
 
   return (
@@ -25,7 +25,7 @@ const Category = () => {
         {categories.map((category) => {
           const { name, img, items } = category;
           return (
-            <div className="category__item">
+            <div className={`category__item ${name}`}>
               <img src={img} alt="" className="category__item-icon" />
               <p className="category__item-name">{name}</p>
               <p className="category__item-items">{items}</p>

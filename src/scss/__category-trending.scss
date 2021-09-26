@@ -1,0 +1,166 @@
+.category {
+  padding: 4.01375rem 7.5rem 3.125rem 7.3125rem;
+
+  &__title {
+    font-size: 2.375rem;
+    font-weight: 500;
+    line-height: 3.125rem;
+    color: $text-dark;
+    margin-bottom: 2.61125rem;
+
+    &-green {
+      color: $primary-green;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 0.625rem;
+    height: 13.4375rem;
+    align-items: flex-start;
+    padding: 0.625rem 0;
+    margin-bottom: 2.8125rem;
+  }
+
+  &__item {
+    text-align: center;
+    color: $text-dark;
+    flex: 1;
+    height: 10.9375rem;
+    padding: 1.875rem 0;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      height: 14.375rem;
+    }
+
+    &-icon {
+      height: 3rem;
+    }
+
+    &-name {
+      line-height: 1.375rem;
+      font-weight: 500;
+      margin: 1.5rem 0 0.25rem;
+    }
+
+    &-items {
+      font-size: 0.875rem;
+      line-height: 1rem;
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    gap: 0.8125rem;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  &__next-btn {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    border-radius: 1.5625rem;
+    padding: 0.5625rem 0.8125rem;
+    border: none;
+    display: flex;
+    // gap: 0.75rem;
+  }
+
+  &__btn-text {
+    margin-left: 0.4375rem;
+    margin-right: 0.75rem;
+  }
+}
+
+.trending {
+  padding: 4.01375rem 6.875rem 3.125rem 7.5rem;
+
+  &__title {
+    font-size: 2.375rem;
+    font-weight: 500;
+    line-height: 3.125rem;
+    color: $text-dark;
+    margin-bottom: 3.48625rem;
+
+    &-green {
+      color: $primary-green;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.875rem 1.25rem;
+    margin-bottom: 4.25rem;
+  }
+
+  &__item {
+    border-radius: 1.0625rem;
+    box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
+    padding-bottom: 1.875rem;
+
+    &-img {
+      width: 7.384375rem;
+      height: 7.5rem;
+      margin: 2.0625rem 0 1.1875rem 1.2925rem;
+      border-radius: 0.375rem;
+      //   margin: 0.3125rem;
+    }
+
+    &-detail {
+      margin-left: 1.5625rem;
+    }
+
+    &-name {
+      font-size: 1.625rem;
+      font-weight: 500;
+      line-height: 3.125rem;
+      color: #000;
+    }
+
+    &-category {
+      color: $primary-green;
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.333125rem;
+      margin-bottom: 1.125rem;
+    }
+  }
+
+  &__btn {
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    font-weight: 500;
+    width: 9.375rem;
+    height: 3.125rem;
+    border-radius: 1.5625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.cupcake {
+  background-color: $bg-cupcake;
+}
+
+.pizza {
+  background-color: $bg-pizza;
+}
+
+.kebab {
+  background-color: $bg-kebab;
+}
+
+.doughnut {
+  background-color: $bg-doughnut;
+}
+
+.salmon {
+  background-color: $bg-salmon;
+}
