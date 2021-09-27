@@ -17,3 +17,12 @@ $purple: #b23f74;
 $darker-blue: #405eb6;
 $lighter-blue: #40a2b1;
 $star-color: #ff8412;
+
+$mobile: 800px;
+
+// Mixins
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

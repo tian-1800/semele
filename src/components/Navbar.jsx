@@ -3,9 +3,8 @@ import logo from "../img/logo.png";
 
 const Navbar = () => (
   <div className="navbar">
-    <div className="navbar__logo">
-      <img src={logo} alt="logo" />
-    </div>
+    <img src={logo} alt="logo" className="navbar__logo" />
+
     <div className="navbar__menu">
       <span className="navbar__menu-item">
         <a href="##">Home</a>

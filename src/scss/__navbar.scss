@@ -9,8 +9,8 @@
   font-size: 0.875rem;
 
   &__logo {
-    width: 12.94rem;
-    height: 2.125rem;
+    width: 12.9375rem;
+    height: 3.125rem;
   }
 
   &__menu {
@@ -23,8 +23,24 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    width: 13.4375rem;
     height: 2.625rem;
     color: $text-dark;
+  }
+
+  @include mobile {
+    padding: 0 2.375rem 0 2.0625rem;
+
+    &__logo {
+      width: 9.375rem;
+      height: 2.25rem;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__login > *:first-child {
+      display: none;
+    }
   }
 }

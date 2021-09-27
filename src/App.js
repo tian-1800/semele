@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Category from "./components/Category";
 import Trending from "./components/Trending";
 import BottomNav from "./components/BottomNav";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Category />
       <Trending />
       <BottomNav />
-      <footer>&copy; 2021 ELEMES ID. ALL RIGHTS RESERVED</footer>
+      <Footer />
     </div>
   );
 }

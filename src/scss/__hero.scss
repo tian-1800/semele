@@ -25,11 +25,11 @@
     position: absolute;
     right: 0;
     top: 0;
-  }
 
-  &__teaser-large {
-    width: 25.80625rem;
-    height: 25.921875rem;
+    &-large {
+      width: 25.80625rem;
+      height: 25.921875rem;
+    }
   }
 
   &__inset {
@@ -41,6 +41,30 @@
   &__container-btn {
     display: flex;
     gap: 1rem;
+  }
+
+  @include mobile {
+    margin: 2.8125rem 2.375rem 0 2.0625rem;
+
+    &__teaser {
+      position: relative;
+      margin-bottom: 2rem;
+
+      &-large {
+        width: 12.40625rem;
+        height: 12.46875rem;
+        margin: 2.19375rem;
+      }
+    }
+
+    &__inset {
+      top: 10.9rem;
+      left: 7.5rem;
+    }
+
+    &__text {
+      max-width: 100%;
+    }
   }
 }
 

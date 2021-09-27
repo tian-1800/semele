@@ -1,0 +1,45 @@
+.footer {
+  color: $text-light;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.1875rem 0.625rem 2.1875rem;
+  text-align: center;
+
+  &__text-desktop {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 5.5rem 0 2rem 0;
+  }
+
+  &__block {
+    display: none;
+    font-size: 0.875rem;
+  }
+
+  &__burger {
+    &-bar {
+      width: 2.4375rem;
+      height: 0.203125rem;
+      background-color: $text-light;
+      margin: 0.575625rem auto;
+    }
+  }
+
+  &__group-name {
+    margin-top: 0.403125rem;
+    line-height: 1.5rem;
+  }
+
+  @include mobile {
+    &__text-desktop {
+      display: none;
+    }
+
+    &__block {
+      display: block;
+    }
+  }
+}

@@ -28,7 +28,7 @@ const Category = () => {
             <div className={`category__item ${name}`}>
               <img src={img} alt="" className="category__item-icon" />
               <p className="category__item-name">{name}</p>
-              <p className="category__item-items">{items}</p>
+              <p className="category__item-items">{items} Items</p>
             </div>
           );
         })}
