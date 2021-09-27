@@ -502,7 +502,7 @@ footer {
   line-height: 1rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin: 5.5rem 0 2rem 0;
+  margin: 5.5rem auto 2rem auto;
 }
 .footer__block {
   display: none;
